@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        .indendt{
+            margin-left:15px;
+        }
+        body {
+            background-color:lavender;
+            color: black;
+            font-family:Cambria, Cochin, Georgia, Times, Times New Roman, serif
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <table>
+            <tr>
+                <td><h2>Call dynamically loaded assembly method</h2></td>
+            </tr>
+            <tr>
+                <td> <h3>Call Instructions</h3> </td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-style:italic; font-weight:50">
+                        <br />Service takes a json request at /api/execute using an HttpPost method.
+                        <br />The Body of the method must contain a json with the following structure:
+                        <br />
+                        <br />{
+                        <br /><span class="indendt" />"dlllocation" : "\\some_location\\some_assembly.dll",
+                        <br /><span class="indendt" />"dllnamespace": "DummyNamespace",
+                        <br /><span class="indendt" />"dllclass": "DummyClassName",
+                        <br /><span class="indendt" />"dllmethod": "DummyMethodName"
+                        <br />}
+                    </p>
+
+                </td>
+            </tr>
+        </table>
+        
+
+       
+
+       
+
+    </div>
+
+</body>
+</html>
